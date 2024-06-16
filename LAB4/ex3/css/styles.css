@@ -1,0 +1,37 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background-color: #ff0066;
+  color: white;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.card-statistics {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-statistics h3 {
+  margin: 10px 0;
+}
+
+.card-statistics i {
+  margin-bottom: 10px;
+}

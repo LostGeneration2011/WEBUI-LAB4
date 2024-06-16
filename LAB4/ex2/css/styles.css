@@ -1,0 +1,316 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    background: url('../img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.our-story-blog-section .overlay-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-story-blog-section .overlay-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.our-story-blog-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.our-story-blog-section .overlay-container:hover img {
+    transform: scale(1.1);
+}
+
+.our-story-blog-section .overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+.our-story-blog-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.our-story-blog-section p {
+    font-size: 1.2rem;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.feature-products-section .product-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.feature-products-section .product-card img {
+    width: 100%;
+    height: 200px; /* Đặt chiều cao cố định để hình ảnh vuông */
+    object-fit: cover; /* Đảm bảo hình ảnh được cắt đúng tỷ lệ */
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-products-section .product-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.feature-products-section .product-card:hover img {
+    transform: scale(1.1);
+}
+
+.feature-products-section .product-card:hover .overlay {
+    opacity: 1;
+}
+
+.feature-products-section .product-card .overlay a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.feature-products-section .product-card .overlay a:hover {
+    background-color: white;
+    color: black;
+}
+
+.feature-products-section h5 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.feature-products-section p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Làm nổi bật các nút điều khiển */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+    margin-bottom: 20px;
+    width: 100%; /* Đảm bảo khung nhập liệu chiếm toàn bộ chiều rộng */
+}
+
+.contact-form .btn-primary {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .contact-form .form-control {
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .contact-form .form-control {
+        margin-bottom: 15px;
+    }
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer a {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer a.footer-link {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a.footer-link:hover {
+    color: white;
+}
+
+.footer .list-inline-item a {
+    font-size: 1.2rem;
+    color: #ccc;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .list-inline-item a:hover {
+    color: white;
+}
+
+.footer .form-control {
+    background-color: #444;
+    border: none;
+    color: white;
+}
+
+.footer .form-control::placeholder {
+    color: #bbb;
+}
+
+.footer .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.footer .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* New CSS for Category Section */
+.categories-section .category-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.categories-section .category-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.categories-section .category-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.categories-section .category-card:hover img {
+    transform: scale(1.1);
+}
+
+.categories-section .category-card:hover .overlay {
+    opacity: 1;
+}
+
+.categories-section .category-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+
+.navbar-brand img {
+    height: 60px; /* Thay đổi kích thước logo ở đây */
+    width: auto; /* Đảm bảo tỷ lệ của logo không bị méo */
+}
+
+.nav-link .bi-cart {
+    font-size: 1.5rem;
+    color: #000; /* Màu sắc của icon giỏ hàng */
+}
+
+.form-control {
+    width: 200px; /* Đặt chiều rộng của khung tìm kiếm */
+}
+
+@media (max-width: 768px) {
+    .form-control {
+        width: 100px; /* Điều chỉnh chiều rộng khung tìm kiếm trên màn hình nhỏ hơn */
+    }
+}
+
+
+.navbar-brand img {
+    height: 100px; /* Thay đổi kích thước logo ở đây */
+    width: auto; /* Đảm bảo tỷ lệ của logo không bị méo */
+}
+

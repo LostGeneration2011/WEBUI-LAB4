@@ -1,0 +1,21 @@
+body {
+    font-family: $font-stack;
+  }
+  
+  .hero-section {
+    background: url('../img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  }
+  

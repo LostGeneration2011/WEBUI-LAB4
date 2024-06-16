@@ -1,0 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.main-content .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-list .card {
+    border: none;
+}
+
+.product-list .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.aside {
+    border-left: 4px solid #dc3545;
+}
+
+.footer {
+    background-color: #343a40;
+}
